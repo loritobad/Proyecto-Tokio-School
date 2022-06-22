@@ -1,0 +1,10 @@
+{% extends "base_template.html" %}
+{% block title %}Zona de Clientes{% endblock %}
+{% block contenido%}
+
+{% if current_user.is_authenticated() %}
+  Hi {{ current_user.name }}!
+{% endif %}
+
+
+{% endblock %}
